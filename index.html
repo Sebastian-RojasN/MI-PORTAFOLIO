@@ -17,13 +17,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
 
 </head>
 
 <body class="">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand-lg bg-black fs-5" data-bs-theme="dark">
         <div class="container-fluid">
@@ -94,7 +93,7 @@
                             </div>
                         </div>
                         <div class="col-9 py-2">
-                            <div class="card bg-transparent">
+                            <div class="card bg-transparent border-danger border-5 shadow">
                                 <div class="card-body">
                                     <div class="float-end fs-5 fw-bold"> Marzo 2016 - Julio 2023</div>
                                     <h3 class="card-title">Ingeniería Civil de Minas</h3>
@@ -104,69 +103,67 @@
                                         capacidad análitica, resolución de problemas, inteligencia emocional, liderazgo
                                         y
                                         trabajo en equipo.</p>
+                                    <button id="more-info" type="button" class="btn mx-auto text-warning float-end">Más
+                                        información</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- GRUPO DE SUBITEMS -->
-                    <div class="">
-                        <!-- SUBITEM -->
-                        <div class="row">
-                            <div class="col-3 text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-end">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-end">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
+                    <!-- SUBITEM -->
+                    <div class="row d-none" id="sub-item-1">
+                        <div class="col-3 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="col-6 align-self-start py-2 ms-auto">
+                            <div class="card bg-transparent">
+                                <div class="card-body sub-item">
+                                    <div class="float-end"> Marzo 2016 - Julio 2023</div>
+                                    <h5 class="card-title">Práctica Profesional</h5>
+                                    <p class="card-text"> Se desempeña como desarrollador de software
+                                        utilizando C++ en VsCode junto con Unity. Se crea una solución innovadora
+                                        para
+                                        visualizar modelos mineros 3D en un software llamado Anabari para la empresa
+                                        Actioniin.</p>
                                 </div>
                             </div>
-                            <div class="col-6 align-self-start py-2 ms-auto">
-                                <div class="card bg-transparent">
-                                    <div class="card-body sub-item">
-                                        <div class="float-end"> Marzo 2016 - Julio 2023</div>
-                                        <h5 class="card-title">Práctica Profesional</h5>
+                        </div>
+                    </div>
+                    <!-- SUBITEM -->
+                    <div class="row d-none" id="sub-item-2">
+                        <div class="col-3 text-center flex-column d-none d-sm-flex">
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                            <div class="row h-50">
+                                <div class="col border-end">&nbsp;</div>
+                                <div class="col">&nbsp;</div>
+                            </div>
+                        </div>
+                        <div class="col-6 align-self-start py-2 me-auto">
+                            <div class="card bg-transparent">
+                                <div class="card-body sub-item">
+                                    <div class="float-end"> Marzo 2016 - Julio 2023</div>
+                                    <h5 class="card-title">Práctica Industrial</h4>
                                         <p class="card-text"> Se desempeña como desarrollador de software
-                                            utilizando C++ en VsCode junto con Unity. Se crea una solución innovadora
+                                            utilizando C++ en VsCode junto con Unity. Se crea una solución
+                                            innovadora
                                             para
-                                            visualizar modelos mineros 3D en un software llamado Anabari para la empresa
+                                            visualizar modelos mineros 3D en un software llamado Anabari para la
+                                            empresa
                                             Actioniin.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- SUBITEM -->
-                        <div class="row">
-                            <div class="col-3 text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-end">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <div class="row h-50">
-                                    <div class="col border-end">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-                            <div class="me-auto col-7 py-2">
-                                <div class="card bg-transparent">
-                                    <div class="card-body sub-item">
-                                        <div class="float-end"> Marzo 2016 - Julio 2023</div>
-                                        <h5 class="card-title">Práctica Industrial</h4>
-                                            <p class="card-text"> Se desempeña como desarrollador de software
-                                                utilizando C++ en VsCode junto con Unity. Se crea una solución
-                                                innovadora
-                                                para
-                                                visualizar modelos mineros 3D en un software llamado Anabari para la
-                                                empresa
-                                                Actioniin.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
+
                 </div>
                 <!-- END UNIVERSITY -->
 
@@ -180,7 +177,7 @@
                                     <div class="col">&nbsp;</div>
                                 </div>
                                 <h5 class="m-2">
-                                    <span class="badge rounded-circle bg-light border">&nbsp;</span>
+                                    <span class="badge rounded-circle bg-warning">&nbsp;</span>
                                 </h5>
                                 <div class="row h-50">
                                     <div class="col">&nbsp;</div>
@@ -188,58 +185,38 @@
                                 </div>
                             </div>
                             <div class="col-9 py-2">
-                                <div class="card bg-transparent border-danger border-5 shadow">
-                                    <div class="card-body">
+                                <div class="card bg-transparent border-warning border-5 shadow">
+                                    <div class="card-body text-warning">
                                         <div class="float-end"> Marzo 2016 - Agosto 2023</div>
                                         <h3 class="card-title fw-bold">Bootcamp Full Stack</h3>
                                         <p class="card-text"> Realizo mis estudios formales mediante un Bootcamp
                                             Fullstack, adquiriendo rápidamente habilidades técnicas en el campo de la
                                             informática.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- end -->
-                    <!-- start -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-auto text-center flex-column d-none d-sm-flex">
-                                <div class="row h-50">
-                                    <div class="col border-end">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                                <h5 class="m-2">
-                                    <span class="badge rounded-circle bg-success border-success">&nbsp;</span>
-                                </h5>
-                                <div class="row h-50">
-                                    <div class="col">&nbsp;</div>
-                                    <div class="col">&nbsp;</div>
-                                </div>
-                            </div>
-                            <div class="col py-2">
-                                <div class="card border-success shadow">
-                                    <div class="card-body">
-                                        <div class="float-end"> Marzo 2023 - Agosto 2023</div>
-                                        <h4 class="card-title text-muted">Bootcamp Full Stack</h4>
-                                        <p class="card-text text-muted"> Realizo mis estudios formales mediante un
-                                            Bootcamp
-                                            Fullstack, adquiriendo rápidamente habilidades técnicas en el campo de la
-                                            informática.
-                                        </p>
+                                        <button id="more-info" type="button"
+                                            class="btn mx-auto text-warning float-end">Más
+                                            información</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- end -->
                 </div>
             </div>
-
         </div>
+
+        <!-- SKILLS SECTION -->
+        <div class="p-5 border-warning">
+            <div class="p-5 m-5 text-center text-light">
+                <h1 class="display-3">HABILIDADES</h1>
+            </div>
+        </div>
+
     </div>
 
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
